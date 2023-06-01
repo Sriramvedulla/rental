@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HappyPlace - Rental Property Portal</title>
+    <style>
+      .formgroup {
+        padding: 20px;
+        background-color: #caa0a1;
+        width: 65%;
+        margin-left: 16%;
+      }
+      #heading {
+        color: #6a3e6f;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 6px;
+      }
+      td {
+        border: 1px solid #fff;
+        border-radius: 6px;
+        margin: 2px;
+        color: #fff;
+      }
+      .group {
+        width: 100%;
+      }
+      #details {
+        color: #6a3e6f;
+        background-color: #fff;
+        font-weight: 900;
+      }
+      #flat,
+      #value {
+        width: 98%;
+        background-color: #caa0a1;
+        margin: 2px;
+        color: #fff;
+      }
+      #rent,
+      #bhk {
+        background-color: #caa0a1;
+        width: 97%;
+        margin: 2px;
+        color: #fff;
+      }
+      #address {
+        width: 98%;
+        height: 60px;
+        background-color: #caa0a1;
+        color: #fff;
+        margin: 2px;
+      }
+      #post,
+      #available,
+      #floor,
+      #name,
+      #phno {
+        color: #fff;
+        background-color: #caa0a1;
+        width: 97%;
+        margin: 2px;
+      }
+      #price,
+      #deposit {
+        width: 70%;
+      }
+      #btn {
+        color: #6c5785;
+        font-weight: 700;
+        margin-left: 39.5%;
+        margin-top: 30px;
+        border-radius: 6px;
+        border: 1px solid grey;
+        padding: 4px;
+      }
+      #btn:hover {
+        background-color: #6c5785;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="formgroup">
+      <h2 id="heading">HappyPlace - Rental Property Portal</h2>
+      <table class="group">
+        <tbody>
+          <tr>
+            <td id="details">Property Details</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="flat"></label>
+              <select id="flat">
+                <option value="Independent House">Independent House</option>
+              </select>
+            </td>
+            <td>
+              <label for="value"></label>
+              <select id="value">
+                <option value="5-10">5-10</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="rent"></label>
+              <input type="number" id="rent" value="2000" />
+            </td>
+            <td>
+              <label for="bhk"></label>
+              <input type="text" id="bhk" value="3" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="address"></label>
+              <input
+                type="text"
+                id="address"
+                value="No4,Cawley Brown Road,Coimbatore"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="post">Posted on:</label><br />
+              <input type="date" id="post" value="03/01/2021" />
+            </td>
+            <td>
+              <label for="available">Available from:</label><br />
+              <input type="date" id="available" value="03/10/2021" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="price">Rent:</label>
+              <input type="range" id="price" />17500
+            </td>
+            <td>
+              <label for="deposit">Deposit:</label>
+              <input type="range" id="deposit" />150000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="floor"></label>
+              <input type="text" id="floor" value="Enter the floor no*" />
+            </td>
+            <td>
+              <input type="checkbox" id="parking" />
+              <label for="parking">Parking facility</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Extra Aminities</td>
+            <td>
+              <input type="checkbox" id="lift" name="optional" />
+              <label for="lift">Lift</label><br />
+              <input type="checkbox" id="staff" name="optional" />
+              <label for="staff">Maintainance staff</label><br />
+              <input type="checkbox" id="play" name="optional" />
+              <label for="play">Park</label><br />
+              <input type="checkbox" id="intercom" name="optional" />
+              <label for="intercom">Intercom</label><br />
+              <input type="checkbox" id="furnish" name="optional" />
+              <label for="furnish">Furnishing</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="name"></label>
+              <input type="text" id="name" value="Ram" />
+            </td>
+            <td>
+              <label for="phno"></label>
+              <input type="tel" id="phno" value="9159933777" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="button" id="btn" value="POST PROPERTY" />
+    </form>
+  </body>
+</html>
